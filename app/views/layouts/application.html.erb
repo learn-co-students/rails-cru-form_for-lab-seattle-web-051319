@@ -8,7 +8,15 @@
 </head>
 <body>
 
+<%=link_to 'Create a New Song', new_song_path%>
+<%=link_to 'Create a New Artist', new_artist_path%>
+<%=link_to 'Create a New Genre', new_genre_path%>
+
 <%= yield %>
+<br><br>
+<%=link_to 'Genres', genres_path%>
+<%=link_to 'Songs', songs_path%>
+<%=link_to 'Artists', artists_path%>
 
 </body>
 </html>
