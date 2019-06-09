@@ -4,3 +4,5 @@ Songs:<br>
 <% @songs.each do |song| %>
 <%= link_to song.name, song_path(song) %><br>
 <%end%>
+
+<br><div><%= link_to 'Edit', edit_genre_path(@genre)%></div>
